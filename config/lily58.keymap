@@ -20,11 +20,11 @@
 
         rsthanoi {
             bindings = <
-&kp ESCAPE  &kp N1       &kp N2      &kp N3      &kp N4        &kp N5                                  &kp N6         &kp N7        &kp N8      &kp N9      &kp N0       &kp BSPC
-&kp TAB     &kp B        &kp M       &kp C       &kp P         &kp J                                   &kp SEMICOLON  &kp U         &kp L       &kp Y       &kp SQT      &kp BSLH
-&kp LCTRL   &mt LCTRL R  &mt LGUI S  &mt LALT T  &mt LSHIFT H  &kp V                                   &kp K          &mt RSHIFT A  &mt RALT N  &mt RGUI O  &mt LCTRL I  &kp ENTER
-&kp LSHIFT  &kp Z        &kp W       &kp F       &kp D         &kp Q   &kp LBKT       &kp RBKT         &kp SLASH      &kp G         &kp COMMA   &kp PERIOD  &kp X        &kp RSHIFT
-                                     &kp LALT    &kp LSHIFT    &kp E   &lt 2 ENTER    &lt 3 BACKSPACE  &kp SPACE      &kp DEL       &kp RALT
+&kp ESCAPE  &kp N1       &kp N2      &kp N3      &kp N4        &kp N5                                 &kp N6         &kp N7        &kp N8      &kp N9      &kp N0       &kp BSPC
+&kp TAB     &kp B        &kp M       &kp C       &kp P         &kp J                                  &kp SEMICOLON  &kp U         &kp L       &kp Y       &kp SQT      &kp BSLH
+&kp LCTRL   &mt LCTRL R  &mt LGUI S  &mt LALT T  &mt LSHIFT H  &kp V                                  &kp K          &mt RSHIFT A  &mt RALT N  &mt RGUI O  &mt LCTRL I  &kp ENTER
+&kp LSHIFT  &kp Z        &kp W       &kp F       &kp D         &kp Q    &kp LBKT       &kp RBKT       &kp SLASH      &kp G         &kp COMMA   &kp PERIOD  &kp X        &kp RSHIFT
+                                     &kp LALT    &kp LSHIFT    &lt 1 E  &lt 2 ENTER    &kp BACKSPACE  &lt 3 SPACE    &kp DEL       &kp RALT
             >;
 
             label = "rsthanoi58";
