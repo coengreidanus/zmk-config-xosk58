@@ -30,7 +30,7 @@
             label = "rsthanoi58";
         };
 
-        Symbol {
+        SymbolLayer {
             bindings = <
 &trans  &trans           &trans           &trans                     &trans                        &trans                                        &trans         &trans               &trans        &trans             &trans           &trans
 &trans  &kp EXCLAMATION  &kp AT           &kp LEFT_BRACE             &kp RIGHT_BRACE               &kp TILDE                                     &kp PIPE       &kp N7               &kp N8        &kp N9             &kp PLUS         &trans
@@ -39,7 +39,7 @@
                                           &trans                     &none                         &trans          &none                &kp N0   &kp DOT        &kp EQUAL            &trans
             >;
 
-            label = "Symbol";
+            label = "SymbolLayer";
         };
 
         Navigation {
