@@ -17,6 +17,15 @@
 &lt { tapping-term-ms = <300>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        escapeCombi {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
