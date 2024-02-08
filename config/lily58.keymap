@@ -26,6 +26,15 @@
         };
     };
 
+    macros {
+        enterExit: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &tog 6>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -110,11 +119,11 @@
 
         StickyNumPad {
             bindings = <
-&trans  &trans        &trans  &trans  &trans     &trans                           &trans     &trans     &trans  &trans  &trans        &trans
-&trans  &kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                         &kp PLUS   &kp N7     &kp N8  &kp N9  &kp ASTERISK  &trans
-&trans  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS                        &kp MINUS  &kp N4     &kp N5  &kp N6  &kp SLASH     &trans
-&trans  &kp CARET     &kp N1  &kp N2  &kp N3     &tog 6     &trans      &trans    &tog 6     &kp N1     &kp N2  &kp N3  &kp CARET     &trans
-                              &trans  &kp EQUAL  &kp DOT    &lt 6 N0    &lt 6 N0  &kp DOT    &kp EQUAL  &trans
+&trans  &trans        &trans  &trans  &trans     &trans                          &trans     &trans     &trans  &trans  &trans        &trans
+&trans  &kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                        &kp PLUS   &kp N7     &kp N8  &kp N9  &kp ASTERISK  &trans
+&trans  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS                       &kp MINUS  &kp N4     &kp N5  &kp N6  &kp SLASH     &trans
+&trans  &kp CARET     &kp N1  &kp N2  &kp N3     &enterExit  &trans    &trans    &tog 6     &kp N1     &kp N2  &kp N3  &kp CARET     &trans
+                              &trans  &kp EQUAL  &kp DOT     &kp N0    &lt 6 N0  &kp DOT    &kp EQUAL  &trans
             >;
         };
 
