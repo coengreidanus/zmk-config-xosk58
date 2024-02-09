@@ -20,7 +20,7 @@
     combos {
         compatible = "zmk,combos";
 
-        escapeCombi {
+        escapeCombo {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
