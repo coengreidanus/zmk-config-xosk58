@@ -29,6 +29,11 @@
             bindings = <&kp TAB>;
             key-positions = <25 26>;
         };
+
+        capsCombo {
+            bindings = <&kp CAPS>;
+            key-positions = <37 38>;
+        };
     };
 
     macros {
@@ -45,6 +50,15 @@
             compatible = "zmk,behavior-hold-tap";
             label = "TOGKP";
             bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+
+        capsLGUI: capsLGUI {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPSLGUI";
+            bindings = <&kp>, <&caps_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
@@ -99,10 +113,10 @@
 
         Navigation {
             bindings = <
-&trans        &kp LS(EXCL)    &kp LS(AT)        &kp LS(POUND)     &kp LS(DLLR)            &kp LS(PRCNT)                                              &kp LS(CARET)   &kp LS(AMPS)    &kp LS(STAR)  &kp LS(LPAR)     &kp LS(RPAR)  &trans
-&trans        &kp DELETE      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)              &kp LG(N0)                                                 &kp K_CUT       &kp K_COPY      &kp K_PASTE   &kp K_UNDO       &kp K_REDO    &kp LS(PIPE)
-&trans        &kp LEFT_SHIFT  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)        &kp LG(Q)                                                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &caps_word    &trans
-&kp CAPSLOCK  &mo 5           &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)        &tog 6                  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &mo 5         &trans
+&trans        &kp LS(EXCL)    &kp LS(AT)        &kp LS(POUND)     &kp LS(DLLR)            &kp LS(PRCNT)                                              &kp LS(CARET)   &kp LS(AMPS)    &kp LS(STAR)  &kp LS(LPAR)     &kp LS(RPAR)          &trans
+&trans        &kp DELETE      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)              &kp LG(N0)                                                 &kp K_CUT       &kp K_COPY      &kp K_PASTE   &kp K_UNDO       &kp K_REDO            &kp LS(PIPE)
+&trans        &kp LEFT_SHIFT  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)        &kp LG(Q)                                                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &capsLGUI LS(LGUI) 0  &trans
+&kp CAPSLOCK  &mo 5           &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)        &tog 6                  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &mo 5                 &trans
                                                 &trans            &kp LG(LS(DOWN_ARROW))  &kp LS(LG(DOWN_ARROW))  &trans            &trans           &trans          &trans          &trans
             >;
 
