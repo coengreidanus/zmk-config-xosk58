@@ -91,7 +91,7 @@
 &trans  &kp EXCLAMATION  &kp AT           &kp LEFT_BRACE             &kp RIGHT_BRACE               &kp TILDE                                     &kp PLUS      &kp N7               &kp N8        &kp N9             &kp PIPE             &trans
 &trans  &mt LCTRL HASH   &mt LGUI DOLLAR  &mt LALT LEFT_PARENTHESIS  &mt LSHIFT RIGHT_PARENTHESIS  &kp UNDERSCORE                                &kp MINUS     &mt RSHIFT NUMBER_4  &mt RALT N5   &mt RGUI NUMBER_6  &mt RCTRL AMPERSAND  &trans
 &trans  &kp PERCENT      &kp CARET        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp GRAVE       &kp DOUBLE_QUOTES    &kp SQT  &kp ASTERISK  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3       &kp SLASH            &trans
-                                          &trans                     &none                         &trans          &none                &kp N0   &kp DOT       &kp EQUAL            &trans
+                                          &trans                     &kp DOUBLE_QUOTES             &trans          &kp SQT              &kp N0   &kp DOT       &kp EQUAL            &trans
             >;
 
             label = "SymbolLayer";
