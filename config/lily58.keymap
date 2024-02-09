@@ -35,6 +35,17 @@
         };
     };
 
+    behaviors {
+        togKP: togKP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGKP";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -71,11 +82,11 @@
 
         SymbolLayer {
             bindings = <
-&trans  &trans           &trans           &trans                     &trans                        &trans                                        &trans         &trans               &trans        &trans             &trans           &trans
-&trans  &kp EXCLAMATION  &kp AT           &kp LEFT_BRACE             &kp RIGHT_BRACE               &kp TILDE                                     &kp PIPE       &kp N7               &kp N8        &kp N9             &kp PLUS         &trans
-&trans  &mt LCTRL HASH   &mt LGUI DOLLAR  &mt LALT LEFT_PARENTHESIS  &mt LSHIFT RIGHT_PARENTHESIS  &kp UNDERSCORE                                &kp AMPERSAND  &mt RSHIFT NUMBER_4  &mt RALT N5   &mt RGUI NUMBER_6  &mt RCTRL MINUS  &trans
-&trans  &kp PERCENT      &kp CARET        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp GRAVE       &kp DOUBLE_QUOTES    &kp SQT  &kp BACKSLASH  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3       &kp STAR         &trans
-                                          &trans                     &none                         &trans          &none                &kp N0   &kp DOT        &kp EQUAL            &trans
+&trans  &trans           &trans           &trans                     &trans                        &trans                                        &trans        &trans               &trans        &trans             &trans               &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp LEFT_BRACE             &kp RIGHT_BRACE               &kp TILDE                                     &kp PLUS      &kp N7               &kp N8        &kp N9             &kp PIPE             &trans
+&trans  &mt LCTRL HASH   &mt LGUI DOLLAR  &mt LALT LEFT_PARENTHESIS  &mt LSHIFT RIGHT_PARENTHESIS  &kp UNDERSCORE                                &kp MINUS     &mt RSHIFT NUMBER_4  &mt RALT N5   &mt RGUI NUMBER_6  &mt RCTRL AMPERSAND  &trans
+&trans  &kp PERCENT      &kp CARET        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp GRAVE       &kp DOUBLE_QUOTES    &kp SQT  &kp ASTERISK  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3       &kp SLASH            &trans
+                                          &trans                     &none                         &trans          &none                &kp N0   &kp DOT       &kp EQUAL            &trans
             >;
 
             label = "SymbolLayer";
@@ -119,11 +130,11 @@
 
         StickyNumPad {
             bindings = <
-&trans  &trans         &trans  &trans  &trans     &trans                                   &trans     &trans     &trans  &trans  &trans         &trans
-&trans  &kp ASTERISK   &kp N7  &kp N8  &kp N9     &kp PLUS                                 &kp PLUS   &kp N7     &kp N8  &kp N9  &kp ASTERISK   &trans
-&trans  &mt TAB SLASH  &kp N4  &kp N5  &kp N6     &kp MINUS                                &kp MINUS  &kp N4     &kp N5  &kp N6  &mt TAB SLASH  &trans
-&trans  &kp CARET      &kp N1  &kp N2  &kp N3     &tog 6     &trans          &trans        &tog 6     &kp N1     &kp N2  &kp N3  &kp CARET      &trans
-                               &trans  &kp EQUAL  &kp DOT    &mt ENTER N0    &mt ENTER N0  &kp DOT    &kp EQUAL  &trans
+&trans  &trans              &trans               &trans                         &trans                          &trans                                              &trans              &trans     &trans  &trans  &trans         &trans
+&trans  &mt EXCL PIPE       &mt AT_SIGN N7       &mt LEFT_BRACE N8              &mt RIGHT_BRACE N9              &mt TILDE PLUS                                      &kp PLUS            &kp N7     &kp N8  &kp N9  &kp ASTERISK   &trans
+&trans  &mt HASH AMPERSAND  &mt DOLLAR NUMBER_4  &mt LEFT_PARENTHESIS NUMBER_5  &mt RIGHT_PARENTHESIS NUMBER_6  &mt UNDERSCORE MINUS                                &kp MINUS           &kp N4     &kp N5  &kp N6  &mt TAB SLASH  &trans
+&trans  &mt PERCENT SLASH   &mt CARET NUMBER_1   &mt LEFT_BRACKET NUMBER_2      &mt RIGHT_BRACKET NUMBER_3      &mt GRAVE ASTERISK    &trans          &trans        &mt GRAVE ASTERISK  &kp N1     &kp N2  &kp N3  &kp CARET      &trans
+                                                 &trans                         &mt BACKSPACE EQUAL             &togKP 6 PERIOD       &mt ENTER N0    &mt ENTER N0  &togKP 6 PERIOD     &kp EQUAL  &trans
             >;
         };
 
