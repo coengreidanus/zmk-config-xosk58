@@ -96,7 +96,7 @@
             bindings = <
 &trans        &kp LS(EXCL)    &kp LS(AT)        &kp LS(POUND)     &kp LS(DLLR)      &kp LS(PRCNT)                                     &kp LS(CARET)   &kp LS(AMPS)    &kp LS(STAR)  &kp LS(LPAR)     &kp LS(RPAR)  &trans
 &trans        &kp DELETE      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &kp LG(N0)                                        &kp K_CUT       &kp K_COPY      &kp K_PASTE   &kp K_UNDO       &kp K_REDO    &kp LS(PIPE)
-&trans        &mt LSHIFT TAB  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(Q)                                         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &caps_word    &trans
+&trans        &kp LEFT_SHIFT  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(Q)                                         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &caps_word    &trans
 &kp CAPSLOCK  &mo 5           &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &tog 6         &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &mo 5         &trans
                                                 &trans            &none             &none          &trans            &trans           &trans          &trans          &trans
             >;
@@ -130,11 +130,11 @@
 
         StickyNumPad {
             bindings = <
-&trans  &trans              &trans               &trans                         &trans                          &trans                                              &trans                  &trans                          &trans                              &trans                          &trans              &trans
-&trans  &mt EXCL PIPE       &mt AT_SIGN N7       &mt LEFT_BRACE N8              &mt RIGHT_BRACE N9              &mt TILDE PLUS                                      &mt TILDE PLUS          &mt LEFT_BRACE N7               &mt RIGHT_BRACE N8                  &mt AT_SIGN N9                  &mt EXCL PIPE       &trans
-&trans  &mt HASH AMPERSAND  &mt DOLLAR NUMBER_4  &mt LEFT_PARENTHESIS NUMBER_5  &mt RIGHT_PARENTHESIS NUMBER_6  &mt UNDERSCORE MINUS                                &mt UNDERSCORE MINUS    &mt LEFT_PARENTHESIS NUMBER_4   &mt RIGHT_PARENTHESIS NUMBER_5      &mt DOLLAR NUMBER_6             &mt HASH AMPERSAND  &trans
-&trans  &mt PERCENT SLASH   &mt CARET NUMBER_1   &mt LEFT_BRACKET NUMBER_2      &mt RIGHT_BRACKET NUMBER_3      &mt GRAVE ASTERISK    &trans          &trans        &mt GRAVE ASTERISK      &mt LEFT_BRACKET NUMBER_1       &mt RIGHT_BRACKET NUMBER_2          &mt CARET NUMBER_3      &mt PERCENT SLASH   &trans
-                                                 &trans                         &mt BACKSPACE EQUAL             &togKP 6 PERIOD       &mt ENTER N0    &mt ENTER N0  &togKP 6 PERIOD         &mt BACKSPACE EQUAL             &trans
+&trans  &trans              &trans               &trans                         &trans                          &trans                                              &trans                &trans                         &trans                          &trans               &trans              &trans
+&trans  &mt EXCL PIPE       &mt AT_SIGN N7       &mt LEFT_BRACE N8              &mt RIGHT_BRACE N9              &mt TILDE PLUS                                      &mt TILDE PLUS        &mt LEFT_BRACE N7              &mt RIGHT_BRACE N8              &mt AT_SIGN N9       &mt EXCL PIPE       &trans
+&trans  &mt HASH AMPERSAND  &mt DOLLAR NUMBER_4  &mt LEFT_PARENTHESIS NUMBER_5  &mt RIGHT_PARENTHESIS NUMBER_6  &mt UNDERSCORE MINUS                                &mt UNDERSCORE MINUS  &mt LEFT_PARENTHESIS NUMBER_4  &mt RIGHT_PARENTHESIS NUMBER_5  &mt DOLLAR NUMBER_6  &mt HASH AMPERSAND  &trans
+&trans  &mt PERCENT SLASH   &mt CARET NUMBER_1   &mt LEFT_BRACKET NUMBER_2      &mt RIGHT_BRACKET NUMBER_3      &mt GRAVE ASTERISK    &trans          &trans        &mt GRAVE ASTERISK    &mt LEFT_BRACKET NUMBER_1      &mt RIGHT_BRACKET NUMBER_2      &mt CARET NUMBER_3   &mt PERCENT SLASH   &trans
+                                                 &trans                         &mt BACKSPACE EQUAL             &togKP 6 PERIOD       &mt ENTER N0    &mt ENTER N0  &togKP 6 PERIOD       &mt BACKSPACE EQUAL            &trans
             >;
         };
 
