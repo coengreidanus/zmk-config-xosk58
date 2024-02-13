@@ -106,7 +106,7 @@
 &kp TAB     &kp B        &kp M       &kp C       &kp P         &kp J                                  &kp SEMICOLON  &kp U         &kp L       &kp Y       &kp SQT      &kp BSLH
 &kp LCTRL   &mt LCTRL R  &mt LGUI S  &mt LALT T  &mt LSHIFT H  &kp V                                  &kp K          &mt RSHIFT A  &mt RALT N  &mt RGUI O  &mt LCTRL I  &kp ENTER
 &kp LSHIFT  &kp Z        &kp W       &kp F       &kp D         &kp Q    &kp LBKT       &kp RBKT       &kp SLASH      &kp G         &kp COMMA   &kp PERIOD  &kp X        &kp RSHIFT
-                                     &kp LALT    &kp LSHIFT    &lt 2 E  &lt 3 ENTER    &kp BACKSPACE  &ltE 4 SPACE   &kp DEL       &kp RALT
+                                     &kp LALT    &kp LSHIFT    &lt 2 E  &lt 3 ENTER    &kp BACKSPACE  &lt 4 SPACE    &kp DEL       &kp RALT
             >;
 
             label = "rsthanoi58";
