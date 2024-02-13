@@ -37,6 +37,16 @@
             bindings = <&kp CAPS>;
             key-positions = <37 38>;
         };
+
+        backspaceCOMBO {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+        };
+
+        spaceCOMBO {
+            bindings = <&kp SPACE>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
