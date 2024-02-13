@@ -152,7 +152,7 @@
             bindings = <
 &trans  &trans      &trans        &trans        &trans        &trans                        &trans      &trans        &trans        &trans        &trans      &trans
 &trans  &sys_reset  &bootloader   &out OUT_BLE  &out OUT_USB  &to 7                         &to 7       &out OUT_USB  &out OUT_BLE  &bootloader   &sys_reset  &trans
-&trans  &tog 10     &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 4  &tog 11                       &tog 11     &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 4  &tog 10     &trans
+&trans  &trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 4  &trans                        &trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans
 &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans    &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
                                   &trans        &none         &none       &trans    &none   &none       &none         &trans
             >;
@@ -204,28 +204,6 @@
             >;
 
             label = "UnlockConfirm";
-        };
-
-        Mask36 {
-            bindings = <
-&none  &none   &none   &none   &none   &none                     &none   &none   &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &trans  &trans  &trans  &none
-                       &none   &trans  &trans  &trans    &trans  &trans  &trans  &none
-            >;
-
-            label = "Mask32";
-        };
-
-        Mask42 {
-            bindings = <
-&none   &none   &none   &none   &none   &none                     &none   &none   &none   &none   &none   &none
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &trans  &trans  &trans  &trans
-                        &none   &trans  &trans  &trans    &trans  &trans  &trans  &none
-            >;
         };
     };
 };
