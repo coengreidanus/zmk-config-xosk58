@@ -119,11 +119,11 @@
 
         SymbolLayer {
             bindings = <
-&trans  &trans           &trans           &trans                     &trans                        &trans                                        &trans        &trans               &trans        &trans             &trans               &trans
-&trans  &kp EXCLAMATION  &kp AT           &kp LEFT_BRACE             &kp RIGHT_BRACE               &kp TILDE                                     &kp PLUS      &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3       &kp PIPE             &trans
-&trans  &mt LCTRL HASH   &mt LGUI DOLLAR  &mt LALT LEFT_PARENTHESIS  &mt LSHIFT RIGHT_PARENTHESIS  &kp UNDERSCORE                                &kp MINUS     &mt RSHIFT NUMBER_4  &mt RALT N5   &mt RGUI NUMBER_6  &mt RCTRL AMPERSAND  &trans
-&trans  &kp PERCENT      &kp CARET        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp GRAVE       &kp DOUBLE_QUOTES    &kp SQT  &kp ASTERISK  &kp N7               &kp N8        &kp N9             &kp SLASH            &trans
-                                          &trans                     &kp DOUBLE_QUOTES             &trans          &kp SQT              &kp N0   &kp DOT       &kp EQUAL            &trans
+&trans  &trans           &trans           &trans                     &trans                        &trans                                           &trans        &trans               &trans        &trans             &trans               &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp LEFT_BRACE             &kp RIGHT_BRACE               &kp TILDE                                        &kp PLUS      &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3       &kp PIPE             &trans
+&trans  &mt LCTRL HASH   &mt LGUI DOLLAR  &mt LALT LEFT_PARENTHESIS  &mt LSHIFT RIGHT_PARENTHESIS  &kp UNDERSCORE                                   &kp MINUS     &mt RSHIFT NUMBER_4  &mt RALT N5   &mt RGUI NUMBER_6  &mt RCTRL AMPERSAND  &trans
+&trans  &kp PERCENT      &kp CARET        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp GRAVE       &kp DOUBLE_QUOTES    &kp SQT     &kp ASTERISK  &kp N7               &kp N8        &kp N9             &kp SLASH            &trans
+                                          &trans                     &kp DOUBLE_QUOTES             &trans          &kp SQT              &kp PERIOD  &kp N0        &kp EQUAL            &trans
             >;
 
             label = "SymbolLayer";
@@ -167,11 +167,11 @@
 
         StickyNumPad {
             bindings = <
-&trans  &trans              &trans                &trans                         &trans                          &trans                                              &trans                &trans                         &trans                          &trans                &trans              &trans
-&trans  &mt EXCL PIPE       &mt AT_SIGN NUMBER_1  &mt LEFT_BRACE NUMBER_2        &mt RIGHT_BRACE NUMBER_3        &mt TILDE PLUS                                      &mt TILDE PLUS        &mt LEFT_BRACE NUMBER_1        &mt RIGHT_BRACE NUMBER_2        &mt AT_SIGN NUMBER_3  &mt EXCL PIPE       &trans
-&trans  &mt HASH AMPERSAND  &mt DOLLAR NUMBER_4   &mt LEFT_PARENTHESIS NUMBER_5  &mt RIGHT_PARENTHESIS NUMBER_6  &mt UNDERSCORE MINUS                                &mt UNDERSCORE MINUS  &mt LEFT_PARENTHESIS NUMBER_4  &mt RIGHT_PARENTHESIS NUMBER_5  &mt DOLLAR NUMBER_6   &mt HASH AMPERSAND  &trans
-&trans  &mt PERCENT SLASH   &mt CARET N7          &mt LEFT_BRACKET N8            &mt RIGHT_BRACKET N9            &mt GRAVE ASTERISK    &trans          &trans        &mt GRAVE ASTERISK    &mt LEFT_BRACKET N7            &mt RIGHT_BRACKET N8            &mt CARET N9          &mt PERCENT SLASH   &trans
-                                                  &trans                         &mt BACKSPACE EQUAL             &togKP 6 PERIOD       &mt ENTER N0    &mt ENTER N0  &togKP 6 PERIOD       &mt BACKSPACE EQUAL            &trans
+&trans  &trans              &trans                &trans                         &trans                          &trans                                                      &trans                &trans                         &trans                          &trans                &trans              &trans
+&trans  &mt EXCL PIPE       &mt AT_SIGN NUMBER_1  &mt LEFT_BRACE NUMBER_2        &mt RIGHT_BRACE NUMBER_3        &mt TILDE PLUS                                              &mt TILDE PLUS        &mt LEFT_BRACE NUMBER_1        &mt RIGHT_BRACE NUMBER_2        &mt AT_SIGN NUMBER_3  &mt EXCL PIPE       &trans
+&trans  &mt HASH AMPERSAND  &mt DOLLAR NUMBER_4   &mt LEFT_PARENTHESIS NUMBER_5  &mt RIGHT_PARENTHESIS NUMBER_6  &mt UNDERSCORE MINUS                                        &mt UNDERSCORE MINUS  &mt LEFT_PARENTHESIS NUMBER_4  &mt RIGHT_PARENTHESIS NUMBER_5  &mt DOLLAR NUMBER_6   &mt HASH AMPERSAND  &trans
+&trans  &mt PERCENT SLASH   &mt CARET N7          &mt LEFT_BRACKET N8            &mt RIGHT_BRACKET N9            &mt GRAVE ASTERISK    &trans              &trans            &mt GRAVE ASTERISK    &mt LEFT_BRACKET N7            &mt RIGHT_BRACKET N8            &mt CARET N9          &mt PERCENT SLASH   &trans
+                                                  &trans                         &mt BACKSPACE EQUAL             &kp N0                &mt ENTER PERIOD    &mt ENTER PERIOD  &kp N0                &mt BACKSPACE EQUAL            &trans
             >;
         };
 
