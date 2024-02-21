@@ -52,6 +52,11 @@
             bindings = <&tog 6>;
             key-positions = <28 29>;
         };
+
+        xCombo {
+            bindings = <&kp X>;
+            key-positions = <37 38>;
+        };
     };
 
     macros {
