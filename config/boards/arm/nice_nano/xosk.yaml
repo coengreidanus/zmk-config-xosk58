@@ -1,5 +1,5 @@
-identifier: nice_nano
-name: nice!nano
+identifier: xosk
+name: xosk
 type: mcu
 arch: arm
 toolchain:
