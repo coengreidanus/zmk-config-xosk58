@@ -18,9 +18,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: xosk
     shield: xosk58_left
-  - board: nice_nano_v2
+  - board: xosk
     shield: xosk58_right
-  - board: nice_nano_v2
+  - board: xosk
     shield: settings_reset
