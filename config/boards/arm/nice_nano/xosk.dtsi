@@ -5,12 +5,12 @@
  */
 
 #include <nordic/nrf52840_qiaa.dtsi>
-#include "nice_nano-pinctrl.dtsi"
+#include "xosk-pinctrl.dtsi"
 #include "arduino_pro_micro_pins.dtsi"
 
 / {
-    model = "nice!nano";
-    compatible = "nice,nano";
+    model = "xosk";
+    compatible = "xosk";
 
     chosen {
         zephyr,code-partition = &code_partition;
