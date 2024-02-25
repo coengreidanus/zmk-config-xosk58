@@ -5,7 +5,7 @@
  */
 
 /dts-v1/;
-#include "xosk.dtsi"
+#include "nice_nano.dtsi"
 
 / {
     chosen {
