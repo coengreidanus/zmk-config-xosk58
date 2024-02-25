@@ -57,6 +57,26 @@
             bindings = <&kp X>;
             key-positions = <37 38>;
         };
+
+        resetLeft {
+            bindings = <&sys_reset>;
+            key-positions = <13 14 15>;
+        };
+
+        resetRight {
+            bindings = <&sys_reset>;
+            key-positions = <20 21 22>;
+        };
+
+        bootloaderLeft {
+            bindings = <&bootloader>;
+            key-positions = <15 16 17>;
+        };
+
+        bootloaderRight {
+            bindings = <&bootloader>;
+            key-positions = <18 19 20>;
+        };
     };
 
     macros {
