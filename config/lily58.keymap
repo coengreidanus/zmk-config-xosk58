@@ -61,7 +61,7 @@
 
         xCombo {
             bindings = <&kp X>;
-            key-positions = <37 38>;
+            key-positions = <38 39>;
             layers = <1 2 3 4 5 6>;
         };
 
