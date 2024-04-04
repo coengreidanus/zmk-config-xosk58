@@ -74,6 +74,11 @@
             bindings = <&bootloader>;
             key-positions = <15 16 17>;
         };
+
+        slashCombo {
+            bindings = <&kp SLASH>;
+            key-positions = <14 15>;
+        };
     };
 
     macros {
