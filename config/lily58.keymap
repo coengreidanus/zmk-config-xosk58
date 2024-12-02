@@ -43,12 +43,6 @@
             layers = <1 2 3 4 5 6 7>;
         };
 
-        backspaceCOMBO {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
-            layers = <1 2 3 4 5 6 7>;
-        };
-
         spaceCOMBO {
             bindings = <&kp SPACE>;
             key-positions = <40 41>;
@@ -77,9 +71,9 @@
             key-positions = <15 16 17>;
         };
 
-        slashCombo {
-            bindings = <&kp SLASH>;
-            key-positions = <14 15>;
+        comment {
+            bindings = <&kp LC(SLASH)>;
+            key-positions = <27 28>;
         };
     };
 
