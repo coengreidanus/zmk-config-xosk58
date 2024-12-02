@@ -225,7 +225,7 @@
         UnlockConfirm {
             bindings = <
 &none  &none   &none   &none   &none  &none                    &none  &none  &none   &none   &none   &none
-&none  &trans  &trans  &trans  &to 2  &to 2                    &to 2  &to 2  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &to 2  &to 1                    &to 1  &to 2  &trans  &trans  &trans  &none
 &none  &none   &none   &none   &none  &none                    &none  &none  &none   &none   &none   &none
 &none  &trans  &none   &none   &none  &none  &none     &none   &none  &none  &none   &none   &trans  &none
                        &none   &none  &none  &trans    &trans  &none  &none  &none
