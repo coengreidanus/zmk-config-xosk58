@@ -29,14 +29,12 @@
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
             layers = <3 4 5 6 1 2>;
-            timeout-ms = <100>;
         };
 
         tabCombo {
             bindings = <&kp TAB>;
             key-positions = <37 38>;
             layers = <3 4 5 6 1 2 7>;
-            timeout-ms = <50>;
             require-prior-idle-ms = <50>;
         };
 
@@ -56,7 +54,6 @@
             bindings = <&kp X>;
             key-positions = <38 39>;
             layers = <3 4 5 6 1 2 7>;
-            timeout-ms = <100>;
         };
 
         resetLeft {
@@ -72,7 +69,6 @@
         comment {
             bindings = <&kp LC(SLASH)>;
             key-positions = <39 40>;
-            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <1 2 3 4 5 6 7>;
         };
