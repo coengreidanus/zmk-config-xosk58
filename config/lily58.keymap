@@ -33,7 +33,7 @@
 
         tabCombo {
             bindings = <&kp TAB>;
-            key-positions = <37 38>;
+            key-positions = <25 26>;
             layers = <3 4 5 6 1 2 7>;
             require-prior-idle-ms = <50>;
         };
