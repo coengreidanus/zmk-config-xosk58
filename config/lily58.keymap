@@ -28,32 +28,32 @@
         escapeCombo {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
-            layers = <4 4 5 6 2 0>;
+            layers = <4 4 5 6 1 0>;
         };
 
         tabCombo {
             bindings = <&kp TAB>;
             key-positions = <25 26>;
-            layers = <4 4 5 6 2 0 7>;
+            layers = <4 4 5 6 1 0 7>;
             require-prior-idle-ms = <50>;
         };
 
         spaceCOMBO {
             bindings = <&kp SPACE>;
             key-positions = <40 41>;
-            layers = <4 4 5 6 2 0 7>;
+            layers = <4 4 5 6 1 0 7>;
         };
 
         numpadCombo {
             bindings = <&tog 7>;
             key-positions = <16 17>;
-            layers = <4 4 5 6 7 2 0>;
+            layers = <4 4 5 6 7 1 0>;
         };
 
         xCombo {
             bindings = <&kp X>;
             key-positions = <38 39>;
-            layers = <4 4 5 6 2 0 7>;
+            layers = <4 4 5 6 1 0 7>;
         };
 
         resetLeft {
@@ -70,7 +70,7 @@
             bindings = <&kp LC(SLASH)>;
             key-positions = <39 40>;
             require-prior-idle-ms = <100>;
-            layers = <2 0 4 4 5 6 7>;
+            layers = <1 0 4 4 5 6 7>;
         };
     };
 
@@ -78,7 +78,7 @@
         enterExit: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &tog 2>;
+            bindings = <&kp ENTER &tog 1>;
             label = "NEW_MACRO";
         };
     };
@@ -125,18 +125,6 @@
             label = "Qwerty58";
         };
 
-        Lock {
-            bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &mo 9    &mo 9  &none  &none  &none
-            >;
-
-            label = "Lock";
-        };
-
         rsthanoi {
             bindings = <
 &kp ESCAPE  &kp N1       &kp N2      &kp N3      &kp N4        &kp N5                                 &kp N6         &kp N7        &kp N8      &kp N9      &kp N0       &kp BSPC
@@ -147,6 +135,18 @@
             >;
 
             label = "rsthanoi58";
+        };
+
+        Lock {
+            bindings = <
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+                     &none  &none  &none  &mo 9    &mo 9  &none  &none  &none
+            >;
+
+            label = "Lock";
         };
 
         SymbolLayer {
@@ -188,7 +188,7 @@
         BluetoothPower {
             bindings = <
 &trans  &trans      &trans        &trans        &trans        &trans                        &trans      &trans        &trans        &trans        &trans      &trans
-&trans  &sys_reset  &bootloader   &out OUT_BLE  &out OUT_USB  &to 3                         &to 3       &out OUT_USB  &out OUT_BLE  &bootloader   &sys_reset  &trans
+&trans  &sys_reset  &bootloader   &out OUT_BLE  &out OUT_USB  &to 4                         &to 4       &out OUT_USB  &out OUT_BLE  &bootloader   &sys_reset  &trans
 &trans  &trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 4  &trans                        &trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans
 &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans    &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
                                   &trans        &none         &none       &trans    &none   &none       &none         &trans
@@ -222,7 +222,7 @@
         UnlockConfirm {
             bindings = <
 &none  &none   &none   &none   &none  &none                    &none  &none  &none   &none   &none   &none
-&none  &trans  &trans  &trans  &to 0  &to 2                    &to 2  &to 0  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &to 0  &to 1                    &to 1  &to 0  &trans  &trans  &trans  &none
 &none  &none   &none   &none   &none  &none                    &none  &none  &none   &none   &none   &none
 &none  &trans  &none   &none   &none  &none  &none     &none   &none  &none  &none   &none   &trans  &none
                        &none   &none  &none  &trans    &trans  &none  &none  &none
