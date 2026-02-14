@@ -13,7 +13,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        qwerty {
             // ------------------------------------------------------------------------
             // |  Q  |  W  |  E   |  R   |  T   |  Y   |  U    |  I    |  O   |   P   | 
             // |  A  |  S  |  D   |  F   |  G   |  H   |  J    |  K    |  L   |   ;   |  
@@ -43,7 +43,7 @@
             bindings = <
 &kp BSPC   &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp DEL       &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO  &kp K_REDO
 &kp LSHFT  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(N6)        &kp LS(Q)     &kp LEFT   &kp DOWN    &kp UP       &kp RIGHT   &trans
-&trans     &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &kp LG(N0)    &kp HOME   &kp PG_DN   &kp PG_UP    &kp END     &trans
+&to 6      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &kp LG(N0)    &kp HOME   &kp PG_DN   &kp PG_UP    &kp END     &to 0
                              &kp LG(DOWN)      &kp LG(UP)        &trans        &trans     &trans      &trans
             >;
         };
@@ -86,6 +86,17 @@
 &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT
 &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT
                 &trans   &trans   &trans     &trans       &trans     &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        rsthanio {
+            bindings = <
+&kp B                   &kp M           &kp C           &kp P             &kp J          &kp SEMI       &kp U              &kp L            &kp Y            &kp SQT
+&mt LS(LEFT_CONTROL) R  &mt LEFT_GUI S  &mt LEFT_ALT T  &mt LEFT_SHIFT H  &kp V          &kp K          &mt RIGHT_SHIFT A  &mt RIGHT_ALT N  &mt RIGHT_GUI O  &mt RIGHT_CONTROL I
+&kp Z                   &kp W           &kp F           &kp D             &kp Q          &kp FSLH       &kp G              &kp COMMA        &kp DOT          &kp X
+                                        &kp LEFT_SHIFT  &mo 1             &lt 2 ENTER    &kp BACKSPACE  &lt 3 SPACE        &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
