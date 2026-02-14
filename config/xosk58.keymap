@@ -7,9 +7,60 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <350>;
+    require-prior-idle-ms = <150>;
+};
+
+&lt {
+    require-prior-idle-ms = <150>;
+    flavor = "balanced";
+};
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        escapeCombo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            layers = <0 1 2 3 4>;
+        };
+
+        tabCombo {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+            layers = <0 1 2 3 4>;
+        };
+
+        resetLeft {
+            bindings = <&sys_reset>;
+            key-positions = <0 1 2>;
+            layers = <0 2 1 3 4>;
+        };
+
+        comment {
+            bindings = <&kp LC(SLASH)>;
+            key-positions = <22 23>;
+        };
+
+        bootloaderLeft {
+            bindings = <&bootloader>;
+            key-positions = <2 3 4>;
+        };
+
+        xCombo {
+            bindings = <&kp X>;
+            key-positions = <21 22>;
+        };
+
+        spaceCombo {
+            bindings = <&kt SPACE>;
+            key-positions = <23 24>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
