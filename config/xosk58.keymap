@@ -106,7 +106,7 @@
         navigation {
             bindings = <
 &kp BSPC   &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp DEL       &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO  &kp K_REDO
-&kp LSHFT  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(N6)        &kp LS(Q)     &kp LEFT   &kp DOWN    &kp UP       &kp RIGHT   &trans
+&kp LSHFT  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(N6)        &kp LG(Q)     &kp LEFT   &kp DOWN    &kp UP       &kp RIGHT   &trans
 &to 5      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &kp LG(N0)    &kp HOME   &kp PG_DN   &kp PG_UP    &kp END     &to 5
                              &kp LG(DOWN)      &kp LG(UP)        &trans        &trans     &trans      &trans
             >;
