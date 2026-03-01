@@ -88,7 +88,7 @@
 &kp B               &kp M           &kp C           &kp P             &kp J          &kp SEMI       &kp U              &kp L            &kp Y            &kp SQT
 &mt LEFT_CONTROL R  &mt LEFT_GUI S  &mt LEFT_ALT T  &mt LEFT_SHIFT H  &kp V          &kp K          &mt RIGHT_SHIFT A  &mt RIGHT_ALT N  &mt RIGHT_GUI O  &mt RIGHT_CONTROL I
 &kp Z               &kp W           &kp F           &kp D             &kp Q          &kp FSLH       &kp G              &kp COMMA        &kp DOT          &kp X
-                                    &kp LEFT_SHIFT  &mo 2             &lt 3 ENTER    &kp BACKSPACE  &lt 4 SPACE        &kp DELETE
+                                    &kp LEFT_SHIFT  &lt 2 E           &lt 3 ENTER    &kp BACKSPACE  &lt 4 SPACE        &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
